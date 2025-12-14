@@ -1,0 +1,2 @@
+participant_id,date,time,duration,context,environment,temperature_comfort,lighting,contagious,notes
+YI-XXXX-XX-XXX,2025-01-15,09:30,medium,morning-routine,indoor,comfortable,natural,false,example entry - delete this row

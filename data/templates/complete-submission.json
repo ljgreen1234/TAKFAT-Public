@@ -1,0 +1,80 @@
+{
+  "submission_metadata": {
+    "submission_date": "2025-01-22T10:00:00Z",
+    "data_version": "1.0",
+    "tracking_period": {
+      "start_date": "2025-01-15",
+      "end_date": "2025-01-22"
+    }
+  },
+  "participant_profile": {
+    "participant_id": "YI-XXXX-XX-XXX",
+    "age_range": "30-35",
+    "gender": "prefer-not-to-say",
+    "region": "North America",
+    "health_status": "healthy",
+    "long_covid": false,
+    "wearable_device": "none"
+  },
+  "yawn_events": [
+    {
+      "timestamp": "2025-01-15T09:30:00",
+      "duration": "medium",
+      "context": "morning-routine",
+      "environment": "indoor",
+      "temperature_comfort": "comfortable",
+      "lighting": "natural",
+      "contagious": false,
+      "notes": "first yawn after waking"
+    }
+  ],
+  "daily_summaries": [
+    {
+      "date": "2025-01-15",
+      "total_yawns": 12,
+      "sleep_hours": 7.5,
+      "sleep_quality": "good",
+      "stress_level": "low",
+      "caffeine_intake": "moderate",
+      "physical_activity_minutes": 30,
+      "screen_time_hours": 8,
+      "general_energy": "high",
+      "notes": ""
+    }
+  ],
+  "wearable_data": {
+    "hrv_measurements": [
+      {
+        "date": "2025-01-15",
+        "hrv_rmssd": 45.2,
+        "hrv_sdnn": 62.8,
+        "resting_heart_rate": 62,
+        "average_heart_rate": 75,
+        "measurement_time": "morning"
+      }
+    ],
+    "activity_metrics": [
+      {
+        "date": "2025-01-15",
+        "total_steps": 8543,
+        "distance_km": 6.2,
+        "active_minutes": 35,
+        "walking_speed_avg": 5.1,
+        "sedentary_hours": 9.5
+      }
+    ],
+    "sleep_metrics": [
+      {
+        "date": "2025-01-15",
+        "sleep_start": "23:00",
+        "sleep_end": "06:30",
+        "total_sleep_hours": 7.5,
+        "deep_sleep_hours": 1.8,
+        "rem_sleep_hours": 1.5,
+        "light_sleep_hours": 4.0,
+        "awake_time_hours": 0.2,
+        "sleep_score": 82
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Daily Summary",
+  "type": "object",
+  "required": ["participant_id", "date", "total_yawns"],
+  "properties": {
+    "participant_id": {
+      "type": "string",
+      "pattern": "^YI-[A-Za-z0-9-]+$",
+      "description": "Anonymous participant identifier"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date for this summary (YYYY-MM-DD)"
+    },
+    "total_yawns": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Count of yawns recorded this day"
+    },
+    "sleep_hours": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 14,
+      "description": "Hours of sleep previous night (decimal allowed)"
+    },
+    "sleep_quality": {
+      "type": "string",
+      "enum": ["poor", "fair", "good", "excellent"],
+      "description": "Self-reported sleep quality"
+    },
+    "stress_level": {
+      "type": "string",
+      "enum": ["low", "moderate", "high"],
+      "description": "Self-reported stress level"
+    },
+    "caffeine_intake": {
+      "type": "string",
+      "enum": ["none", "low", "moderate", "high"],
+      "description": "Caffeine consumption (none, 1 cup, 2-3 cups, 4+ cups)"
+    },
+    "physical_activity_minutes": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 300,
+      "description": "Total minutes of exercise/active movement"
+    },
+    "screen_time_hours": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "description": "Hours spent on screens (work + leisure)"
+    },
+    "general_energy": {
+      "type": "string",
+      "enum": ["low", "moderate", "high"],
+      "description": "Self-reported energy level"
+    },
+    "symptoms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of general symptoms (e.g., fatigue, headache)"
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "Additional daily observations"
+    }
+  }
+}

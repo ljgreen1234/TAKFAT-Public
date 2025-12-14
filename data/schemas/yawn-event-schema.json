@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Yawn Event",
+  "type": "object",
+  "required": ["participant_id", "date", "time", "duration", "context", "environment"],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Optional unique identifier for this yawn event"
+    },
+    "participant_id": {
+      "type": "string",
+      "pattern": "^YI-[A-Za-z0-9-]+$",
+      "description": "Anonymous participant identifier (format: YI-XXXX-XX-XXX)"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Full date and time in ISO 8601 format"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date in YYYY-MM-DD format"
+    },
+    "time": {
+      "type": "string",
+      "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$",
+      "description": "Time in 24-hour HH:MM format"
+    },
+    "duration": {
+      "type": "string",
+      "enum": ["short", "medium", "long"],
+      "description": "Duration of yawn: short (<3s), medium (3-5s), long (>5s)"
+    },
+    "context": {
+      "type": "string",
+      "enum": [
+        "waking-up", "morning-routine", "commuting", "desk-work",
+        "physical-activity", "eating", "meeting-call", "studying",
+        "watching-media", "relaxing", "before-sleep", "other"
+      ],
+      "description": "Activity context during yawn"
+    },
+    "environment": {
+      "type": "string",
+      "enum": ["indoor", "outdoor"],
+      "description": "Environment where yawn occurred"
+    },
+    "temperature_comfort": {
+      "type": "string",
+      "enum": ["cold", "cool", "comfortable", "warm", "hot"],
+      "description": "Subjective temperature comfort level"
+    },
+    "lighting": {
+      "type": "string",
+      "enum": ["dark", "dim", "natural", "bright-artificial"],
+      "description": "Lighting conditions"
+    },
+    "contagious": {
+      "type": "boolean",
+      "description": "Whether yawn was triggered by seeing someone else yawn"
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "Additional observations (keep brief, avoid identifying info)"
+    }
+  }
+}

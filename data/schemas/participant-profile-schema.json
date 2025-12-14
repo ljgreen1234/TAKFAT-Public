@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Participant Profile",
+  "type": "object",
+  "required": ["participant_id", "age_range"],
+  "properties": {
+    "participant_id": {
+      "type": "string",
+      "pattern": "^YI-[A-Za-z0-9-]+$",
+      "description": "Anonymous identifier (format: YI-XXXX-XX-XXX or similar)"
+    },
+    "age_range": {
+      "type": "string",
+      "enum": [
+        "5-10", "10-15", "15-18", "18-25", "26-35", "36-45",
+        "46-55", "56-65", "66-75", "76+"
+      ],
+      "description": "Age bracket"
+    },
+    "gender": {
+      "type": "string",
+      "enum": ["male", "female", "non-binary", "prefer-not-to-say", "other"],
+      "description": "Optional gender"
+    },
+    "region": {
+      "type": "string",
+      "enum": [
+        "North America", "South America", "Europe", "Asia",
+        "Africa", "Oceania", "Middle East", "prefer-not-to-say"
+      ],
+      "description": "General geographic region"
+    },
+    "health_status": {
+      "type": "string",
+      "enum": ["healthy", "chronic-condition", "recovering", "prefer-not-to-say"],
+      "description": "General category"
+    },
+    "long_covid": {
+      "type": "boolean",
+      "description": "Whether participant reports long COVID symptoms"
+    },
+    "wearable_device": {
+      "type": "string",
+      "enum": [
+        "none", "fitbit", "apple-watch", "garmin", "whoop",
+        "oura-ring", "samsung", "other"
+      ],
+      "description": "Type of wearable device if using"
+    }
+  }
+}

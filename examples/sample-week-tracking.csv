@@ -1,0 +1,23 @@
+participant_id,date,time,duration,context,environment,temperature_comfort,lighting,contagious,notes
+YI-1990-JD-742,2025-01-15,07:30,medium,waking-up,indoor,comfortable,dim,false,first yawn after alarm
+YI-1990-JD-742,2025-01-15,09:15,short,morning-routine,indoor,comfortable,natural,false,making coffee
+YI-1990-JD-742,2025-01-15,11:45,long,desk-work,indoor,warm,bright-artificial,false,during video call
+YI-1990-JD-742,2025-01-15,14:20,medium,desk-work,indoor,warm,bright-artificial,false,post-lunch slump
+YI-1990-JD-742,2025-01-15,16:30,short,desk-work,indoor,comfortable,natural,true,colleague yawned first
+YI-1990-JD-742,2025-01-15,18:45,medium,commuting,indoor,comfortable,dim,false,on train home
+YI-1990-JD-742,2025-01-15,20:30,long,watching-media,indoor,comfortable,dim,false,watching TV
+YI-1990-JD-742,2025-01-15,22:15,medium,relaxing,indoor,comfortable,dim,false,reading before bed
+YI-1990-JD-742,2025-01-16,07:45,medium,waking-up,indoor,comfortable,dim,false,
+YI-1990-JD-742,2025-01-16,10:20,short,desk-work,indoor,comfortable,bright-artificial,false,
+YI-1990-JD-742,2025-01-16,12:10,medium,eating,indoor,comfortable,natural,false,during lunch
+YI-1990-JD-742,2025-01-16,14:00,long,meeting-call,indoor,warm,bright-artificial,false,long meeting
+YI-1990-JD-742,2025-01-16,15:30,short,desk-work,indoor,comfortable,natural,false,
+YI-1990-JD-742,2025-01-16,17:00,medium,desk-work,indoor,comfortable,natural,false,
+YI-1990-JD-742,2025-01-16,19:30,medium,relaxing,indoor,comfortable,dim,false,
+YI-1990-JD-742,2025-01-16,21:45,long,watching-media,indoor,comfortable,dim,false,
+YI-1990-JD-742,2025-01-17,08:00,short,morning-routine,indoor,comfortable,natural,false,
+YI-1990-JD-742,2025-01-17,11:30,medium,desk-work,indoor,comfortable,bright-artificial,false,
+YI-1990-JD-742,2025-01-17,13:45,long,desk-work,indoor,warm,bright-artificial,false,
+YI-1990-JD-742,2025-01-17,16:20,medium,desk-work,indoor,comfortable,natural,false,
+YI-1990-JD-742,2025-01-17,19:00,short,physical-activity,outdoor,cool,natural,false,after jogging
+YI-1990-JD-742,2025-01-17,21:00,medium,relaxing,indoor,comfortable,dim,false,
