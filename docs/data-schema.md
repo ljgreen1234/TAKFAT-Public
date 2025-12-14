@@ -313,7 +313,7 @@ Examples:
 
 ### Required Validations
 
-1. **Participant ID**: Must follow pattern `YI-[alphanumeric]`
+1. **Participant ID**: Must follow pattern `YI-[alphanumeric-with-hyphens]` (e.g., `YI-1990-JD-742`)
 2. **Dates**: Must be valid dates in YYYY-MM-DD format
 3. **Times**: Must be in 24-hour HH:MM format
 4. **Duration**: Must be one of: "short", "medium", "long"

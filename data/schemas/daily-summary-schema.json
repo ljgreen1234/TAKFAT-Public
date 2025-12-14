@@ -17,8 +17,8 @@
     "total_yawns": {
       "type": "integer",
       "minimum": 0,
-      "maximum": 100,
-      "description": "Count of yawns recorded this day"
+      "maximum": 200,
+      "description": "Count of yawns recorded this day (values over 50 will be flagged for review)"
     },
     "sleep_hours": {
       "type": "number",

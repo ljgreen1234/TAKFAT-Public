@@ -218,7 +218,7 @@ Are you yawning right now from reading this? That's contagious yawning in action
 
 3. **Can be triggered**: Even reading about yawning can trigger yawns
 
-4. **Duration**: Average yawn lasts 6 seconds
+4. **Duration**: Average yawn typically lasts around 6 seconds
 
 5. **Frequency**: Average person yawns 5-10 times per day (huge variation!)
 

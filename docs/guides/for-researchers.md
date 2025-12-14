@@ -494,7 +494,7 @@ data = pd.read_csv('data/submissions/aggregated.csv')
 ```
 TAKFAT-Yawn-Index Project. (2025). 
 Citizen Science Investigation of Yawning and Autonomic Health.
-GitHub repository: https://github.com/ljgreen1234/TAKFAT-Public
+GitHub repository: [repository URL]
 ```
 
 **For Data:**
